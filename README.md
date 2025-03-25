@@ -1,11 +1,11 @@
 # Kampoong
 
 Kampoong (baca kampung) adalah sistem pengelolaan kegiatan dan keuangan kampung.
-Kampung dapat diunakan untuk kampung, RT, RW atau dukuh/dusun.
+Kampoong dapat digunakan untuk kampung, RT, RW atau dukuh/dusun.
 
-Kampung dibuat berbasis aplikasi [Buku Masjid] yang dimodidikasi menjadi Kampoong.
+Kampoong dibuat berbasis aplikasi [Buku Masjid] yang dimodidikasi menjadi Kampoong.
 
-Ide dari [Kampung Rekesan] (https://laporan.kampungrekesan.id/) .
+Ide dari [Kampung Rekesan](https://laporan.kampungrekesan.id/) .
 
 ## Tujuan
 
