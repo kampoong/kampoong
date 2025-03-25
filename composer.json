@@ -1,6 +1,6 @@
 {
-    "name": "laravel/laravel",
-    "description": "The Laravel Framework.",
+    "name": "kampoong/kampoong",
+    "description": "Manajemen kegiatan dan keuangan kampung/RT/RW/dusun/dukuh.",
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "type": "project",
@@ -34,7 +34,7 @@
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.1",
         "brianium/paratest": "^7.1",
-        "buku-masjid/demo-data": "^1.1",
+        "kampoong/demo-data": "^1.1",
         "fakerphp/faker": "^1.14",
         "filp/whoops": "^2.0",
         "laravel/legacy-factories": "^1.1",
