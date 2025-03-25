@@ -18,9 +18,8 @@ Ide dari [Kampung Rekesan](https://laporan.kampungrekesan.id/) .
 ## Manfaat
 
 - Meningkatkan kepercayaan warga terhadap pengelolaan dana kampung, RT, RW, dukuh/dusun.
-- Memudahkan masyarakat dalam memutuskan untuk berinfaq ke masjid tertentu.
-- Mengurangi beban tugas bendahara dalam pembuatan laporan kas masjid/mushalla.
-- Memungkinkan masyarakat/jamaah untuk memantau jadwal pengajian secara online.
+- Mengurangi beban tugas bendahara dalam pembuatan laporan kas kampoong.
+- Memungkinkan warga masyarakat untuk memantau jadwal kegiatan secara online.
 
 ## Sponsor / Mitra
 
