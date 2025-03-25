@@ -28,6 +28,7 @@ Kami berterima kasih kepada sponsor yang mendukung pengembangan Kampoong.
 
 Berikut adalah sponsor dari pengembangan Kampoong:
 * [Binexa Technology](https://www.binexa.com)
+* [Kampung Rekesan] (https://www.kampungrekesan.id/)
 
 Jika anda tertarik untuk menjadi sponsor/mitra Kampoong, silakan hubungi Whatsapp Tim Kampoong pada halaman [Kontak Tim Kampoong](https://kampoong.binexa.com/contact).
 
