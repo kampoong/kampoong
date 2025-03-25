@@ -25,7 +25,7 @@
             <div class="mb-3">
                 <a href="{{ route('public.books.index') }}">
                     <i class="ti">&#xea60;</i>
-                    {{ __('book.program') }} {{ Setting::get('masjid_name', config('masjid.name')) }}
+                    {{ __('book.program') }} {{ Setting::get('kampoong_name', config('kampoong.name')) }}
                 </a>
             </div>
         </div>

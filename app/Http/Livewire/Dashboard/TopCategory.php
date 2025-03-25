@@ -39,7 +39,7 @@ class TopCategory extends Component
         if (Cache::has($cacheKey)) {
             return Cache::get($cacheKey);
         }
-        $color = config('masjid.'.$this->typeCode.'_color');
+        $color = config('kampoong.'.$this->typeCode.'_color');
         $topCategorySummary = Category::where('color', $color)
             ->where('book_id', $this->book->id)
             ->withSum(['transactions' => function ($query) {

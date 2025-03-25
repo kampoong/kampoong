@@ -4,8 +4,8 @@
             <td style="width:33%;height: 40px">&nbsp;</td>
             <td style="width:33%">&nbsp;</td>
             <td style="width:33%">
-                @if (Setting::get('masjid_city_name'))
-                    {{ Setting::get('masjid_city_name') }}, {{ now()->isoFormat('D MMMM Y') }}
+                @if (Setting::get('kampoong_city_name'))
+                    {{ Setting::get('kampoong_city_name') }}, {{ now()->isoFormat('D MMMM Y') }}
                 @else
                     &nbsp;
                 @endif

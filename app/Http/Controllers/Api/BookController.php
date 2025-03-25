@@ -72,7 +72,7 @@ class BookController extends Controller
 
         if (!base64_decode($validatedPayload['image'])) {
             return response()->json([
-                'message' => __('masjid_profile.image_not_found'),
+                'message' => __('kampoong_profile.image_not_found'),
             ]);
         }
 
@@ -103,7 +103,7 @@ class BookController extends Controller
 
         if (!base64_decode($validatedPayload['image'])) {
             return response()->json([
-                'message' => __('masjid_profile.image_not_found'),
+                'message' => __('kampoong_profile.image_not_found'),
             ]);
         }
 

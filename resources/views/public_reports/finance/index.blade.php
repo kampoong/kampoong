@@ -9,18 +9,18 @@
     <div class="container-md">
         <div class="row p-3 p-sm-0 py-sm-3 align-items-center">
             <div class="col-auto">
-                @if (Setting::get('masjid_logo_path'))
+                @if (Setting::get('kampoong_logo_path'))
                     <div class="mb-3">
                         <a href="{{ route('public_reports.index') }}">
-                            <img src="{{ Storage::url(Setting::get('masjid_logo_path'))}}" style="width: 80px">
+                            <img src="{{ Storage::url(Setting::get('kampoong_logo_path'))}}" style="width: 80px">
                         </a>
                     </div>
                 @endif
 
             </div>
             <div class="col">
-                <p class="fs-2 fw-bold lh-sm text-dark mb-1">{{ Setting::get('masjid_name', config('masjid.name')) }}</p>
-                {{ Setting::get('masjid_address') }}
+                <p class="fs-2 fw-bold lh-sm text-dark mb-1">{{ Setting::get('kampoong_name', config('kampoong.name')) }}</p>
+                {{ Setting::get('kampoong_address') }}
             </div>
         </div>
     </div>

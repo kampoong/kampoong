@@ -29,7 +29,7 @@ class TransactionEntryTest extends TestCase
         $category = factory(Category::class)->create([
             'book_id' => $book->id,
             'creator_id' => $user->id,
-            'color' => config('masjid.income_color'),
+            'color' => config('kampoong.income_color'),
         ]);
         $this->visit(route('transactions.index', ['month' => $month, 'year' => $year]));
 
@@ -70,7 +70,7 @@ class TransactionEntryTest extends TestCase
         $category = factory(Category::class)->create([
             'book_id' => $book->id,
             'creator_id' => $user->id,
-            'color' => config('masjid.income_color'),
+            'color' => config('kampoong.income_color'),
         ]);
         $this->visit(route('transactions.index', ['month' => $month, 'year' => $year]));
 
@@ -95,7 +95,7 @@ class TransactionEntryTest extends TestCase
         $category = factory(Category::class)->create([
             'book_id' => $book->id,
             'creator_id' => $user->id,
-            'color' => config('masjid.income_color'),
+            'color' => config('kampoong.income_color'),
         ]);
         $this->visit(route('transactions.index', ['month' => $month, 'year' => $year]));
 
@@ -247,7 +247,7 @@ class TransactionEntryTest extends TestCase
         $category = factory(Category::class)->create([
             'book_id' => $activeBook->id,
             'creator_id' => $user->id,
-            'color' => config('masjid.income_color'),
+            'color' => config('kampoong.income_color'),
         ]);
         session()->put('active_book_id', $activeBook->id);
 

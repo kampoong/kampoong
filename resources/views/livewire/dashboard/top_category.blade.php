@@ -27,7 +27,7 @@
                                 ]) }}
                             @endif
                         </td>
-                        <td class="text-right" style="color: {{ config('masjid.'.$typeCode.'_color') }}">
+                        <td class="text-right" style="color: {{ config('kampoong.'.$typeCode.'_color') }}">
                             @if ($categorySummary->transactions_sum_amount)
                                 {{ format_number($categorySummary->transactions_sum_amount) }}
                             @else

@@ -13,7 +13,7 @@
 
 // Public Routes
 Route::get('schedules', 'Api\PublicScheduleController@index')->name('api.schedules.index');
-Route::get('masjid_profile', [App\Http\Controllers\Api\MasjidProfileController::class, 'show'])->name('api.masjid_profile.show');
+Route::get('kampoong_profile', [App\Http\Controllers\Api\KampoongProfileController::class, 'show'])->name('api.kampoong_profile.show');
 
 // Authentication Routes...
 Route::post('login', 'Api\Auth\LoginController@login')->name('api.login');
@@ -50,10 +50,10 @@ Route::group(['middleware' => 'auth:api', 'as' => 'api.', 'namespace' => 'Api'],
 // Authentication with sessions, specifically for AJAX from Blade.
 Route::group(['middleware' => ['auth', 'web'], 'as' => 'api.'], function () {
     /*
-     * Masjid Profile Endpoints
+     * Kampoong Profile Endpoints
      */
-    Route::post('masjid_profile/upload_logo', [App\Http\Controllers\Api\MasjidProfileController::class, 'updateLogo'])->name('masjid_profile.upload_logo');
-    Route::post('masjid_profile/upload_photo', [App\Http\Controllers\Api\MasjidProfileController::class, 'updatePhoto'])->name('masjid_profile.upload_photo');
+    Route::post('kampoong_profile/upload_logo', [App\Http\Controllers\Api\KampoongProfileController::class, 'updateLogo'])->name('kampoong_profile.upload_logo');
+    Route::post('kampoong_profile/upload_photo', [App\Http\Controllers\Api\KampoongProfileController::class, 'updatePhoto'])->name('kampoong_profile.upload_photo');
 
     /*
      * Upload QRIS for Bank Account Endpoint

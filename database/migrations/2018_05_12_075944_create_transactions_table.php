@@ -22,7 +22,7 @@ return new class extends Migration
             $table->unsignedInteger('category_id')->nullable();
             $table->unsignedInteger('partner_id')->nullable();
             $table->unsignedInteger('bank_account_id')->nullable();
-            $table->unsignedInteger('book_id')->default(config('masjid.default_book_id'));
+            $table->unsignedInteger('book_id')->default(config('kampoong.default_book_id'));
             $table->unsignedInteger('creator_id');
             $table->timestamps();
 

@@ -36,12 +36,12 @@
                                 ]) }}
                             @endif
                         </td>
-                        <td class="text-right text-nowrap" style="color: {{ config('masjid.income_color') }}">{{ format_number($balanceSummary['income']) }}</td>
-                        <td class="text-right text-nowrap" style="color: {{ config('masjid.spending_color') }}">{{ format_number($balanceSummary['spending']) }}</td>
+                        <td class="text-right text-nowrap" style="color: {{ config('kampoong.income_color') }}">{{ format_number($balanceSummary['income']) }}</td>
+                        <td class="text-right text-nowrap" style="color: {{ config('kampoong.spending_color') }}">{{ format_number($balanceSummary['spending']) }}</td>
                         @php
                             $typeCode = $balanceSummary['balance'] >= 0 ? 'income' : 'spending';
                         @endphp
-                        <td class="text-right text-nowrap" style="color: {{ config('masjid.'.$typeCode.'_color') }}">
+                        <td class="text-right text-nowrap" style="color: {{ config('kampoong.'.$typeCode.'_color') }}">
                             {{ format_number($balanceSummary['balance']) }}
                         </td>
                     </tr>

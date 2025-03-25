@@ -246,9 +246,12 @@ class InternalFinanceController extends FinanceController
         return $currentMonthBalance;
     }
 
-    // to inform the views (including css style) to show the letterhead only if masjid name and address not empty
+    /** 
+     * to inform the views (including css style) 
+     * to show the letterhead only if kampoong name and address not empty
+     **/
     private function showLetterhead(): bool
     {
-        return Setting::get('masjid_name', config('masjid.name')) && Setting::get('masjid_address');
+        return Setting::get('kampoong_name', config('kampoong.name')) && Setting::get('kampoong_address');
     }
 }

@@ -11,11 +11,11 @@
         @endif
         <div class="section-hero row" style="padding-top: 3em">
             <div class="col">
-                @include('layouts.public._masjid_info')
+                @include('layouts.public._kampoong_info')
             </div>
             <div class="d-none d-lg-block col-6 position-relative">
-                @if (Setting::get('masjid_photo_path'))
-                    <img src="{{ Storage::url(Setting::get('masjid_photo_path'))}}">
+                @if (Setting::get('kampoong_photo_path'))
+                    <img src="{{ Storage::url(Setting::get('kampoong_photo_path'))}}">
                 @else
                     <div style="background-color: #f8f8f8; height: 360px"></div>
                 @endif

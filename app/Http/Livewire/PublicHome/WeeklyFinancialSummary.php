@@ -26,7 +26,7 @@ class WeeklyFinancialSummary extends Component
         $startWeek = today()->startOfWeek();
         $this->startWeek = $startWeek->copy();
         $this->today = today();
-        $defaultBook = Book::find(config('masjid.default_book_id'));
+        $defaultBook = Book::find(config('kampoong.default_book_id'));
         if (is_null($defaultBook)) {
             return;
         }

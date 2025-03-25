@@ -7,13 +7,13 @@
     <div class="container-md py-5 px-4">
         <div class="row align-items-center justify-content-center">
             <div class="me-lg-3 d-sm-none d-flex justify-content-center">
-                @if (Setting::get('masjid_logo_path'))
-                    <div class="mb-3"><img src="{{ Storage::url(Setting::get('masjid_logo_path'))}}" style="width: 100px"></div>
+                @if (Setting::get('kampoong_logo_path'))
+                    <div class="mb-3"><img src="{{ Storage::url(Setting::get('kampoong_logo_path'))}}" style="width: 100px"></div>
                 @endif
             </div>
             <div class="col-lg-3 me-lg-3 d-none d-sm-inline">
-                @include('layouts.public._masjid_info')
-                @include('layouts.public._masjid_social_media')
+                @include('layouts.public._kampoong_info')
+                @include('layouts.public._kampoong_social_media')
             </div>
             <div class="col-lg-4 mt-4 mt-lg-0 card p-4 shadow-lg">
                 <h2>{{ __('auth.login') }} {{ config('app.name') }}</h3>

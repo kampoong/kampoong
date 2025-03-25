@@ -24,16 +24,16 @@ class CustomPermissionTest extends TestCase
     }
 
     /** @test */
-    public function user_can_edit_masjid_profile()
+    public function user_can_edit_kampoong_profile()
     {
         $admin = $this->createUser('admin');
         $chairman = $this->createUser('chairman');
         $secretary = $this->createUser('secretary');
         $finance = $this->createUser('finance');
 
-        $this->assertTrue($admin->can('edit_masjid_profile'));
-        $this->assertFalse($chairman->can('edit_masjid_profile'));
-        $this->assertFalse($secretary->can('edit_masjid_profile'));
-        $this->assertFalse($finance->can('edit_masjid_profile'));
+        $this->assertTrue($admin->can('edit_kampoong_profile'));
+        $this->assertFalse($chairman->can('edit_kampoong_profile'));
+        $this->assertFalse($secretary->can('edit_kampoong_profile'));
+        $this->assertFalse($finance->can('edit_kampoong_profile'));
     }
 }

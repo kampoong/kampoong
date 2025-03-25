@@ -18,8 +18,8 @@
                             {!! FormField::radios(
                                 'color',
                                 [
-                                    config('masjid.income_color') => '<span class="badge" style="background-color: '.config('masjid.income_color').'">'.__('transaction.income').'</span>',
-                                    config('masjid.spending_color') => '<span class="badge" style="background-color: '.config('masjid.spending_color').'">'.__('transaction.spending').'</span>',
+                                    config('kampoong.income_color') => '<span class="badge" style="background-color: '.config('kampoong.income_color').'">'.__('transaction.income').'</span>',
+                                    config('kampoong.spending_color') => '<span class="badge" style="background-color: '.config('kampoong.spending_color').'">'.__('transaction.spending').'</span>',
                                 ],
                                 ['required' => true, 'label' => __('category.color'), 'list_style' => 'unstyled']
                             ) !!}

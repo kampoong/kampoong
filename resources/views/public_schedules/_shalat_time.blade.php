@@ -1,6 +1,6 @@
 <div class="pt-4 pt-sm-0">
     <div class="d-flex align-items-end gap-2 align-items-end overflow-scroll">
-        <div id="Imsak" class="pray-off bg-secondary praytime-item d-flex align-items-end col" style="height: 240px; background-image: url('{{ Storage::url(Setting::get('masjid_photo_path'))}}'); background-repeat: no-repeat; background-position: 0 -30px">
+        <div id="Imsak" class="pray-off bg-secondary praytime-item d-flex align-items-end col" style="height: 240px; background-image: url('{{ Storage::url(Setting::get('kampoong_photo_path'))}}'); background-repeat: no-repeat; background-position: 0 -30px">
             <div class="prayinfo">
                 @if (config('features.shalat_time.is_active'))
                     <h4 class="m-0 d-flex">{{ __('shalat_time.daily_schedules.imsak') }}</h4>
@@ -10,7 +10,7 @@
                 @endif
             </div>
         </div>
-        <div id="Subuh" class="pray-off bg-secondary praytime-item d-flex align-items-end col" style="height: 200px; background-image: url('{{ Storage::url(Setting::get('masjid_photo_path'))}}'); background-repeat: no-repeat;background-position: -95px -70px">
+        <div id="Subuh" class="pray-off bg-secondary praytime-item d-flex align-items-end col" style="height: 200px; background-image: url('{{ Storage::url(Setting::get('kampoong_photo_path'))}}'); background-repeat: no-repeat;background-position: -95px -70px">
             <div class="prayinfo">
                 @if (config('features.shalat_time.is_active'))
                     <h4 class="m-0 d-flex">{{ __('shalat_time.daily_schedules.fajr') }}</h4>
@@ -20,7 +20,7 @@
                 @endif
             </div>
         </div>
-        <div id="Dzuhur" class="pray-off bg-secondary praytime-item d-flex align-items-end col" style="height: 210px; background-image: url('{{ Storage::url(Setting::get('masjid_photo_path'))}}'); background-repeat: no-repeat;background-position: -190px -60px">
+        <div id="Dzuhur" class="pray-off bg-secondary praytime-item d-flex align-items-end col" style="height: 210px; background-image: url('{{ Storage::url(Setting::get('kampoong_photo_path'))}}'); background-repeat: no-repeat;background-position: -190px -60px">
             <div class="prayinfo">
                 @if (config('features.shalat_time.is_active'))
                     <h4 class="m-0 d-flex">{{ __('shalat_time.daily_schedules.dzuhr') }}</h4>
@@ -30,7 +30,7 @@
                 @endif
             </div>
         </div>
-        <div id="Ashar" class=" pray-off bg-secondary praytime-item d-flex align-items-end col" style="height: 270px; background-image: url('{{ Storage::url(Setting::get('masjid_photo_path'))}}'); background-repeat: no-repeat;background-position: -285px 0px">
+        <div id="Ashar" class=" pray-off bg-secondary praytime-item d-flex align-items-end col" style="height: 270px; background-image: url('{{ Storage::url(Setting::get('kampoong_photo_path'))}}'); background-repeat: no-repeat;background-position: -285px 0px">
             <div class="prayinfo">
                 @if (config('features.shalat_time.is_active'))
                     <h4 class="m-0 d-flex">{{ __('shalat_time.daily_schedules.ashr') }}</h4>
@@ -40,7 +40,7 @@
                 @endif
             </div>
         </div>
-        <div id="Maghrib" class="pray-off bg-secondary praytime-item d-flex align-items-end col" style="height: 200px; background-image: url('{{ Storage::url(Setting::get('masjid_photo_path'))}}'); background-repeat: no-repeat;background-position: -380px -70px">
+        <div id="Maghrib" class="pray-off bg-secondary praytime-item d-flex align-items-end col" style="height: 200px; background-image: url('{{ Storage::url(Setting::get('kampoong_photo_path'))}}'); background-repeat: no-repeat;background-position: -380px -70px">
             <div class="prayinfo">
                 @if (config('features.shalat_time.is_active'))
                     <h4 class="m-0 d-flex">{{ __('shalat_time.daily_schedules.maghrib') }}</h4>
@@ -50,7 +50,7 @@
                 @endif
             </div>
         </div>
-        <div id="Isya" class="pray-off bg-secondary praytime-item d-flex align-items-end col" style="height: 230px; background-image: url('{{ Storage::url(Setting::get('masjid_photo_path'))}}'); background-repeat: no-repeat;background-position: -475px -40px">
+        <div id="Isya" class="pray-off bg-secondary praytime-item d-flex align-items-end col" style="height: 230px; background-image: url('{{ Storage::url(Setting::get('kampoong_photo_path'))}}'); background-repeat: no-repeat;background-position: -475px -40px">
             <div class="prayinfo">
                 @if (config('features.shalat_time.is_active'))
                     <h4 class="m-0 d-flex">{{ __('shalat_time.daily_schedules.isya') }}</h4>

@@ -7,7 +7,7 @@
     <div class="container-md">
         <div class="row section-hero pb-0 d-lg-flex align-items-stretch">
             <div class="col-lg-6">
-                @include('layouts.public._masjid_info')
+                @include('layouts.public._kampoong_info')
             </div>
 
             <div class="col-lg-6 d-lg-flex justify-content-end align-items-end">

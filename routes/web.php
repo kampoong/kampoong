@@ -133,11 +133,11 @@ Route::group(['middleware' => 'auth'], function () {
         Route::resource('lecturings', App\Http\Controllers\LecturingController::class);
     }
 
-    Route::get('masjid_profile', [App\Http\Controllers\MasjidProfileController::class, 'show'])->name('masjid_profile.show');
-    Route::get('masjid_profile/edit', [App\Http\Controllers\MasjidProfileController::class, 'edit'])->name('masjid_profile.edit');
-    Route::patch('masjid_profile', [App\Http\Controllers\MasjidProfileController::class, 'update'])->name('masjid_profile.update');
-    Route::patch('masjid_profile/coordinates/update', [App\Http\Controllers\MasjidProfileController::class, 'coordinatesUpdate'])
-        ->name('masjid_profile.coordinates.update');
+    Route::get('kampoong_profile', [App\Http\Controllers\KampoongProfileController::class, 'show'])->name('kampoong_profile.show');
+    Route::get('kampoong_profile/edit', [App\Http\Controllers\KampoongProfileController::class, 'edit'])->name('kampoong_profile.edit');
+    Route::patch('kampoong_profile', [App\Http\Controllers\KampoongProfileController::class, 'update'])->name('kampoong_profile.update');
+    Route::patch('kampoong_profile/coordinates/update', [App\Http\Controllers\KampoongProfileController::class, 'coordinatesUpdate'])
+        ->name('kampoong_profile.coordinates.update');
 
     /*
      * Backup Restore Database Routes

@@ -7,7 +7,7 @@
     <div class="container-md">
         <div class="section-hero row">
             <div class="col">
-                @include('layouts.public._masjid_info')
+                @include('layouts.public._kampoong_info')
             </div>
             <div class="d-none d-lg-flex align-items-center col-7 position-relative">
                 <img src="{{ asset('images/donate_infaq.png') }}" style="width: 80%">

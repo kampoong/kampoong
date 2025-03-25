@@ -31,17 +31,17 @@
         <tbody>
             <tr>
                 <td style="width:140px;">
-                    @if (Setting::get('masjid_logo_path'))
-                        <img src="{{ Storage::url(Setting::get('masjid_logo_path'))}}" style="width: 75px">
+                    @if (Setting::get('kampoong_logo_path'))
+                        <img src="{{ Storage::url(Setting::get('kampoong_logo_path'))}}" style="width: 75px">
                     @endif
                 </td>
                 <td style="width:330px">
                     <div style="width:280px">
-                        <h4 style="margin:0px; border-bottom: 3px; font-size: 21.5px">{{ Setting::get('masjid_name') }}</h4>
-                        @if (Setting::get('masjid_address'))
+                        <h4 style="margin:0px; border-bottom: 3px; font-size: 21.5px">{{ Setting::get('kampoong_name') }}</h4>
+                        @if (Setting::get('kampoong_address'))
                         <hr style="margin: 2px 0">
                         <div style="font-size:11px">
-                            {{ Setting::get('masjid_address') }}
+                            {{ Setting::get('kampoong_address') }}
                         </div>
                         @endif
                     </div>
@@ -83,8 +83,8 @@
                 <td style="width:33%;height: 40px">&nbsp;</td>
                 <td style="width:33%">&nbsp;</td>
                 <td style="width:33%">
-                    @if (Setting::get('masjid_city_name'))
-                        {{ Setting::get('masjid_city_name') }}, {{ Carbon\Carbon::parse($transaction->date)->isoFormat('D MMMM Y') }}
+                    @if (Setting::get('kampoong_city_name'))
+                        {{ Setting::get('kampoong_city_name') }}, {{ Carbon\Carbon::parse($transaction->date)->isoFormat('D MMMM Y') }}
                     @else
                         &nbsp;
                     @endif

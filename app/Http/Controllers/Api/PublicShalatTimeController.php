@@ -21,7 +21,7 @@ class PublicShalatTimeController extends Controller
         }
 
         try {
-            $cityName = Setting::get('masjid_city_name');
+            $cityName = Setting::get('kampoong_city_name');
             $date = Carbon::now()->format('Y-m-d');
 
             return $shalatTimeService->getSchedule($cityName, $date);

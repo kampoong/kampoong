@@ -15,8 +15,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title') - {{ Setting::get('masjid_name', config('masjid.name')) }}</title>
-    <meta property="og:title" content="@yield('title') - {{ Setting::get('masjid_name', config('masjid.name')) }}" />
+    <title>@yield('title') - {{ Setting::get('kampoong_name', config('kampoong.name')) }}</title>
+    <meta property="og:title" content="@yield('title') - {{ Setting::get('kampoong_name', config('kampoong.name')) }}" />
 
     <!-- Styles -->
     <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
@@ -31,7 +31,7 @@
 <body>
     <div class="d-none d-sm-block">
         <div class="nav-public d-flex align-items-center justify-content-between position-relative">
-            <a href="{{ url('/') }}"><img src="{{ asset('images/logo_bukumasjid.svg') }}" style="width: 150px"></a>
+            <a href="{{ url('/') }}"><img src="{{ asset('images/logo_kampoong.svg') }}" style="width: 150px"></a>
             <div class="position-relative text-center">
                 <div class="nav-desktop position-relative shadow-sm rounded">
                     <ul class="nav">
@@ -58,7 +58,7 @@
         <div class="d-sm-none">
             <div class="row p-3 me-0">
                 <div class="col text-start">
-                    <a href="{{ url('/') }}"><img src="{{ asset('images/logo_bukumasjid.svg') }}" style="width: 100px"></a>
+                    <a href="{{ url('/') }}"><img src="{{ asset('images/logo_kampoong.svg') }}" style="width: 100px"></a>
                 </div>
                 <div class="col text-end">
                     <a class="btn position-relative z-2" data-bs-toggle="offcanvas" href="#offcanvasStart" role="button" aria-controls="offcanvasStart">

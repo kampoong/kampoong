@@ -69,7 +69,7 @@ class TransactionsController extends Controller
                 }
             }
             $categories = Category::orderBy('name')
-                ->where('color', config('masjid.income_color'))
+                ->where('color', config('kampoong.income_color'))
                 ->where('status_id', Category::STATUS_ACTIVE)
                 ->pluck('name', 'id');
         }
@@ -94,7 +94,7 @@ class TransactionsController extends Controller
                 }
             }
             $categories = Category::orderBy('name')
-                ->where('color', config('masjid.spending_color'))
+                ->where('color', config('kampoong.spending_color'))
                 ->where('status_id', Category::STATUS_ACTIVE)
                 ->pluck('name', 'id');
         }

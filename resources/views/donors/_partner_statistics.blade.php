@@ -2,7 +2,7 @@
     <div class="col-md-3 text-center text-md-left">
         <h1 class="page-title">{{ __('partner.partner_type_donor') }}</h1>
         <div class="page-subtitle ml-0">
-            {{ __('dashboard.dashboard') }} {{ __('donor.donor') }} {{ Setting::get('masjid_name') }}.
+            {{ __('dashboard.dashboard') }} {{ __('donor.donor') }} {{ Setting::get('kampoong_name') }}.
         </div>
     </div>
     <div class="col-md-6 mt-3 mt-sm-0">

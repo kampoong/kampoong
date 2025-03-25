@@ -20,7 +20,7 @@
         </h1>
         <div class="page-subtitle ml-0">
             {{ __('app.total') }} : {{ $partners->total() }} {{ __('partner.partner') }}
-            {{ Setting::get('masjid_name') }}.
+            {{ Setting::get('kampoong_name') }}.
         </div>
     </div>
     <div class="col-md-4 text-center">

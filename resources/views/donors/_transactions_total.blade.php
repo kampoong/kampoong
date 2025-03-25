@@ -22,11 +22,11 @@
                         return $transaction->in_out ? $transaction->amount : -$transaction->amount;
                     });
                 @endphp
-                <div class="h1 mt-4" style="color: {{ $transactionTotal >= 0 ? config('masjid.income_color') : config('masjid.spending_color') }}">
+                <div class="h1 mt-4" style="color: {{ $transactionTotal >= 0 ? config('kampoong.income_color') : config('kampoong.spending_color') }}">
                     {{ config('money.currency_code') }} {{ format_number($transactionTotal) }}
                 </div>
             @else
-                <div class="h1 mt-4" style="color: {{ config('masjid.income_color') }}">{{ config('money.currency_code') }} 0</div>
+                <div class="h1 mt-4" style="color: {{ config('kampoong.income_color') }}">{{ config('money.currency_code') }} 0</div>
             @endif
         </div>
     </div>

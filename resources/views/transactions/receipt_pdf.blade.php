@@ -31,17 +31,17 @@
         <tbody>
             <tr>
                 <td style="width:140px;">
-                    @if (Setting::get('masjid_logo_path'))
-                        <img src="{{ Storage::url(Setting::get('masjid_logo_path'))}}" style="width: 75px">
+                    @if (Setting::get('kampoong_logo_path'))
+                        <img src="{{ Storage::url(Setting::get('kampoong_logo_path'))}}" style="width: 75px">
                     @endif
                 </td>
                 <td style="width:330px">
                     <div style="width:280px">
-                        <h4 style="margin:0px; border-bottom: 3px; font-size: 21.5px">{{ Setting::get('masjid_name') }}</h4>
-                        @if (Setting::get('masjid_address'))
+                        <h4 style="margin:0px; border-bottom: 3px; font-size: 21.5px">{{ Setting::get('kampoong_name') }}</h4>
+                        @if (Setting::get('kampoong_address'))
                         <hr style="margin: 2px 0">
                         <div style="font-size:11px">
-                            {{ Setting::get('masjid_address') }}
+                            {{ Setting::get('kampoong_address') }}
                         </div>
                         @endif
                     </div>
@@ -63,7 +63,7 @@
                     @if ($transaction->in_out)
                         {{ optional($transaction->partner)->name }}
                     @else
-                        {{ Setting::get('masjid_name') }}
+                        {{ Setting::get('kampoong_name') }}
                     @endif
                 </td>
             </tr>
@@ -84,7 +84,7 @@
                 <td>&nbsp;</td>
                 <td style="text-align: center;">
                     @php
-                        $cityName = Setting::get('masjid_city_name') ? Setting::get('masjid_city_name').', ' : '';
+                        $cityName = Setting::get('kampoong_city_name') ? Setting::get('kampoong_city_name').', ' : '';
                         $dateText = Illuminate\Support\Carbon::parse($transaction->date)->isoFormat('DD MMMM YYYY');
                         $fullText = $cityName.$dateText;
                     @endphp
@@ -103,7 +103,7 @@
                 <td style="text-align: center;vertical-align: bottom;">
                     @if ($transaction->in_out)
                         <strong>{{ auth()->user()->name }}</strong><br>
-                        {{ Setting::get('masjid_name') }}
+                        {{ Setting::get('kampoong_name') }}
                     @else
                         {{ optional($transaction->partner)->name }}
                     @endif

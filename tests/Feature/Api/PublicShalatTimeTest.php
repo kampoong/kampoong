@@ -20,7 +20,7 @@ class PublicShalatTimeTest extends TestCase
                 ->push($this->getFakeShalatTimeResponse(), 200),
         ]);
         DB::table('settings')->insert([
-            'key' => 'masjid_city_name',
+            'key' => 'kampoong_city_name',
             'value' => 'Kab. Belitung',
         ]);
 

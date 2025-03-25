@@ -23,7 +23,7 @@
                                 {!! $transaction->date_alert !!}
                                 {{ link_to_route('transactions.show', Illuminate\Support\Str::limit($transaction->description, 35, ''), $transaction) }}</td>
                             @endif
-                        <td class="text-right" style="color: {{ config('masjid.'.$typeCode.'_color') }}">
+                        <td class="text-right" style="color: {{ config('kampoong.'.$typeCode.'_color') }}">
                             {{ format_number($transaction->amount) }}
                         </td>
                     </tr>

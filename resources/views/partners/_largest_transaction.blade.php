@@ -18,13 +18,13 @@
         </div>
         <div>
             @if ($largestTransaction)
-                <div class="h1 mt-4" style="color: {{ $largestTransaction->in_out ? config('masjid.income_color') : config('masjid.spending_color') }}">
+                <div class="h1 mt-4" style="color: {{ $largestTransaction->in_out ? config('kampoong.income_color') : config('kampoong.spending_color') }}">
                     {{ config('money.currency_code') }}
                     {{ $largestTransaction->in_out ? '' : '-' }}
                     {{ format_number($largestTransaction->amount) }}
                 </div>
             @else
-                <div class="h1 mt-4" style="color: {{ config('masjid.income_color') }}">{{ config('money.currency_code') }} 0</div>
+                <div class="h1 mt-4" style="color: {{ config('kampoong.income_color') }}">{{ config('money.currency_code') }} 0</div>
             @endif
         </div>
     </div>

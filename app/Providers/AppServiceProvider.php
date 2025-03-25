@@ -37,7 +37,7 @@ class AppServiceProvider extends ServiceProvider
         SessionGuard::macro('activeBook', function () {
             $activeBook = Book::find($this->activeBookId());
             if (is_null($activeBook)) {
-                $activeBook = Book::find(config('masjid.default_book_id'));
+                $activeBook = Book::find(config('kampoong.default_book_id'));
             }
 
             return $activeBook;
@@ -50,18 +50,18 @@ class AppServiceProvider extends ServiceProvider
                 }
             }
 
-            return $this->getSession()->get('active_book_id') ?: config('masjid.default_book_id');
+            return $this->getSession()->get('active_book_id') ?: config('kampoong.default_book_id');
         });
         TokenGuard::macro('activeBook', function () {
             $activeBook = Book::find($this->activeBookId());
             if (is_null($activeBook)) {
-                $activeBook = Book::find(config('masjid.default_book_id'));
+                $activeBook = Book::find(config('kampoong.default_book_id'));
             }
 
             return $activeBook;
         });
         TokenGuard::macro('activeBookId', function () {
-            return request()->get('active_book_id') ?: config('masjid.default_book_id');
+            return request()->get('active_book_id') ?: config('kampoong.default_book_id');
         });
         SessionGuard::macro('setActiveBook', function ($activeBookId) {
             $this->getSession()->put('active_book_id', $activeBookId);

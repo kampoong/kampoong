@@ -7,11 +7,11 @@ use Facades\App\Helpers\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
-class MasjidProfileController extends Controller
+class KampoongProfileController extends Controller
 {
     public function updateLogo(Request $request)
     {
-        $this->authorize('edit_masjid_profile');
+        $this->authorize('edit_kampoong_profile');
 
         $validatedPayload = $request->validate([
             'image' => 'required',
@@ -19,12 +19,12 @@ class MasjidProfileController extends Controller
 
         if (!base64_decode($validatedPayload['image'])) {
             return response()->json([
-                'message' => __('masjid_profile.image_not_found'),
+                'message' => __('kampoong_profile.image_not_found'),
             ]);
         }
 
-        if ($masjidLogoPath = Setting::get('masjid_logo_path')) {
-            Storage::delete($masjidLogoPath);
+        if ($kampoongLogoPath = Setting::get('kampoong_logo_path')) {
+            Storage::delete($kampoongLogoPath);
         }
 
         $imageParts = explode(';base64,', $validatedPayload['image']);
@@ -32,17 +32,17 @@ class MasjidProfileController extends Controller
         $imageName = uniqid().'.webp';
 
         Storage::put($imageName, $imageBase64);
-        Setting::set('masjid_logo_path', $imageName);
+        Setting::set('kampoong_logo_path', $imageName);
 
         return response()->json([
-            'message' => __('masjid_profile.logo_uploaded'),
+            'message' => __('kampoong_profile.logo_uploaded'),
             'image' => Storage::url($imageName),
         ]);
     }
 
     public function updatePhoto(Request $request)
     {
-        $this->authorize('edit_masjid_profile');
+        $this->authorize('edit_kampoong_profile');
 
         $validatedPayload = $request->validate([
             'image' => 'required',
@@ -50,12 +50,12 @@ class MasjidProfileController extends Controller
 
         if (!base64_decode($validatedPayload['image'])) {
             return response()->json([
-                'message' => __('masjid_profile.image_not_found'),
+                'message' => __('kampoong_profile.image_not_found'),
             ]);
         }
 
-        if ($masjidPhotoPath = Setting::get('masjid_photo_path')) {
-            Storage::delete($masjidPhotoPath);
+        if ($kampoongPhotoPath = Setting::get('kampoong_photo_path')) {
+            Storage::delete($kampoongPhotoPath);
         }
 
         $imageParts = explode(';base64,', $validatedPayload['image']);
@@ -63,25 +63,25 @@ class MasjidProfileController extends Controller
         $imageName = uniqid().'.webp';
 
         Storage::put($imageName, $imageBase64);
-        Setting::set('masjid_photo_path', $imageName);
+        Setting::set('kampoong_photo_path', $imageName);
 
         return response()->json([
-            'message' => __('masjid_profile.photo_uploaded'),
+            'message' => __('kampoong_profile.photo_uploaded'),
             'image' => Storage::url($imageName),
         ]);
     }
 
     public function show()
     {
-        $masjidName = Setting::get('masjid_name', config('masjid.name'));
-        $masjidAddress = Setting::get('masjid_address');
-        $masjidGoogleMapsLink = Setting::get('masjid_google_maps_link');
-        $logoImageUrl = Setting::get('masjid_logo_path');
+        $kampoongName = Setting::get('kampoong_name', config('kampoong.name'));
+        $kampoongAddress = Setting::get('kampoong_address');
+        $kampoongGoogleMapsLink = Setting::get('kampoong_google_maps_link');
+        $logoImageUrl = Setting::get('kampoong_logo_path');
 
         $response = [
-            'masjid_name' => $masjidName,
-            'masjid_address' => $masjidAddress,
-            'google_maps_link' => $masjidGoogleMapsLink,
+            'kampoong_name' => $kampoongName,
+            'kampoong_address' => $kampoongAddress,
+            'google_maps_link' => $kampoongGoogleMapsLink,
             'logo_image_url' => Storage::url($logoImageUrl),
         ];
 

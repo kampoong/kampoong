@@ -69,7 +69,7 @@ Aplikasi ini dapat diinstal pada server lokal maupun online dengan spesifikasi b
 ### Langkah Instalasi
 
 1. Clone repositori ini dengan perintah: `git clone https://github.com/kampoong/kampoong.git`
-2. Masuk ke direktori buku-masjid: `$ cd kampoong`
+2. Masuk ke direktori kampoong: `$ cd kampoong`
 3. Instal dependensi menggunakan: `$ composer install`
 4. Salin berkas `.env.example` ke `.env`: `$ cp .env.example .env`
 5. Generate kunci aplikasi: `$ php artisan key:generate`
@@ -141,7 +141,7 @@ Untuk menggunakan docker silahkan jalankan perintah ini di terminal:
 
 ### Data Demo
 
-Ketika sudah ter-install di localhost, kita bisa generate data dummy untuk simulasi sistem buku masjid. Datad demo dapat di-generate dengan perintah berikut:
+Ketika sudah ter-install di localhost, kita bisa generate data dummy untuk simulasi sistem Kampoong. Datad demo dapat di-generate dengan perintah berikut:
 
 Generate demo data (3 bulan terakhir):
 
@@ -155,7 +155,7 @@ Hapus semua demo data (yang `created_at` nya `NULL`)
 $ php artisan kampoong:remove-demo-data
 ```
 
-Lengkapnya dapat dilihat pada: [Dokumentasi buku-masjid/demo-data](https://github.com/kampoong/demo-data#cara-pakai).
+Lengkapnya dapat dilihat pada: [Dokumentasi kampoong/demo-data](https://github.com/kampoong/demo-data#cara-pakai).
 
 ## Screenshot
 
